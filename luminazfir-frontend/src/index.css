@@ -1,0 +1,78 @@
+/* index.css or App.css */
+
+/* Global Scrollbar Styles for Webkit browsers */
+::-webkit-scrollbar {
+  width: 12px ;
+  height: 12px ;
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #d6e4e7; /* Track color */
+  border-radius: 6px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #34c759, #007aff);
+  border-radius: 6px;
+  border: 2px solid #f0f4f5;
+}
+
+/* Hover effect for scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #007aff, #34c759);
+}
+
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;  
+  background-color: #f4f9f4; 
+  color: #333;  
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header font for headings */
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set up a smooth transition for hover effects */
+a, button {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add basic layout style */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Custom class for scrollable containers */
+.test-scrollable {
+  height: 400px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+

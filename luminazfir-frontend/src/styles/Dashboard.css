@@ -1,0 +1,150 @@
+/* Dashboard Container */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard h2 {
+  margin-left: 240px;
+  color: #2e3b4e;
+}
+
+.dashboard h3 {
+  font-size: 20px;
+  color: #3f9e72;
+  margin-bottom: 10px;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  width: 200px;
+  position: fixed;
+  top: 120px;
+  left: 20px;
+  background-color: #e1e9e6;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Section Containers */
+.user-info, .order-history, .technicians-booked, .cart-summary, .settings {
+  margin-left: 240px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.order-cards, .technician-cards, .cart-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.order-card, .technician-card, .cart-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.order-card p, .technician-card p, .cart-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.settings {
+  margin-top: 30px;
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Menu Icon for Small Screens */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .dashboard h2 {
+    margin-left: 0;
+    color: #333b47;
+    text-align: center;
+  }
+
+  .sidebar {
+    top: 80px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2e3b4e8c;
+  }
+
+  .sidebar a{
+    color: white;
+  }
+  
+
+  .sidebar.minimized {
+    transform: translateX(-2220px);
+  }
+
+  .menu-icon {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+
+  .user-info, .order-history, .technicians-booked, .cart-summary, .settings {
+    margin-left: 20px;
+  }
+}

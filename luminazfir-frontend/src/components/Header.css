@@ -1,0 +1,270 @@
+/* General Header Styles */
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #2c8a3b; /* Nature-inspired green */
+  color: #fff;
+  height: 70px;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links ul {
+  margin-right:100px;
+}
+
+.nav-links ul li a {
+  color: white;
+  font-size: 1.01rem;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  background-color: #aff3bb; /* Light green for hover effect */
+  border-radius: 9px;
+}
+
+/* Sidebar Close Button */
+.nav-links .close-btn {
+  display: none;
+}
+
+/* Right Section */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#search-input {
+  display: block; /* Hidden by default */
+  width: 250px;
+  padding: 10px 10px;
+  border-radius: 30px;
+  outline: none;
+  margin-right: 50px;
+}
+
+#search-input.active {
+  display: block; /* Show when active */
+}
+
+.search-button{
+  font-size: 20px;
+  background: none;
+  border: none;
+}
+.search-button:hover{
+  color: white; 
+}
+
+.icons a {
+  color: white;
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+
+  .nav-links ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    left: 0; 
+    display: block;
+  }
+
+  .search-button{
+    font-size: 1.1rem;
+    border-radius: 40%;
+    background: none;
+    color: white;
+    border: none;
+  }
+  .search-button:hover{
+    background: rgba(2, 54, 5, 0.526);
+  }
+
+    
+  .icons a {
+    color: white;
+    font-size: 1.1rem;
+    margin: 12px;
+  }
+  
+
+  #search-input {
+    display: none; 
+    width: 160px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .nav-links ul li {
+    margin-bottom: 15px;
+  }
+
+  .nav-links ul li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  .nav-links .close-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  
+  /* Nav Links (Sidebar) */
+.nav-links {
+  position: fixed;
+  top: 0;
+  left: -100%; 
+  width: 300px;
+  height: 50vh;
+  background-color: #053805; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+  transition: left 0.3s ease;
+  border-radius: 20px;
+
+}
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .right-section {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .nav-links ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    left: 0; 
+    display: block;
+  }
+  .search-button{
+    font-size: 1.1rem;
+    border-radius: 40%;
+    background: none;
+    color: white;
+    border: none;
+  }
+  .search-button:hover{
+    background: rgba(2, 54, 5, 0.526);
+  }
+
+  .icons a {
+    color: white;
+    font-size: 1.1rem;
+    margin: 4px;
+  }
+  
+
+  #search-input {
+    display: none; 
+    width: 150px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .nav-links ul li {
+    margin-bottom: 15px;
+  }
+
+  .nav-links ul li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  .nav-links .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: block;
+  }
+  
+  /* Nav Links (Sidebar) */
+.nav-links {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 50vh;
+  background-color: #053805; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+  transition: left 0.3s ease;
+  border-radius: 20px;
+
+}
+
+  .nav-links {
+    width: 250px; 
+  }
+}
+

@@ -1,0 +1,219 @@
+/* General Layout */
+.educational {
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px;
+    background-color: #f4f9f8;
+    color: #333;
+}
+
+.educational-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.educational-header h1 {
+    font-size: 2.5rem;
+    color: #3f9e72;
+    margin-bottom: 10px;
+}
+
+.educational-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Content Sections */
+/* Content Cards */
+.content-section h2{
+    margin: 20px 20px;
+}
+
+.content-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;  /* Centers the cards */
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+    max-width: 300px; 
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #3f9e72;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    flex-grow: 1; 
+}
+
+.learn-more-btn {
+    background-color: #f7a900;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #ffb82a;
+}
+
+
+/* Interactive Tools */
+.interactive-tools {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.interactive-tools h2 {
+    text-align: center;
+    margin: 20px 20px;
+    font-size: 2rem;
+    color: #3f9e72;
+    margin-bottom: 30px;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tool {
+    background-color: #f4f9f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tool h3 {
+    font-size: 1.5rem;
+    color: #3f9e72;
+}
+
+.tool-btn {
+    background-color: #3f9e72;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tool-btn:hover {
+    background-color: #337b58;
+}
+
+/* Additional Resources */
+.additional-resources {
+    margin-bottom: 40px;
+}
+.additional-resources h2{
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.additional-resources ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.additional-resources li {
+    margin: 10px 0;
+}
+
+.additional-resources a {
+    color: #3f9e72;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.additional-resources a:hover {
+    text-decoration: underline;
+}
+
+/* Call to Action Section */
+.cta-section {
+    text-align: center;
+    padding: 30px;
+    background-color: #3f9e72;
+    color: white;
+    border-radius: 10px;
+}
+
+.cta-section p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #f7a900;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ffb82a;
+}
+
+@media (max-width: 768px){
+    
+.tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;  
+    margin-bottom: 40px;
+}
+
+.tool {
+    background-color: #f4f9f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.educational-header h1 {
+    font-size: 2rem;
+    color: #3f9e72;
+    margin-bottom: 10px;
+}
+
+}
