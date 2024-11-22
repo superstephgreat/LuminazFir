@@ -16,6 +16,9 @@ Carbon Emissions Tracker: Track and reduce your carbon footprint with advanced a
 
 Built With
 React: Frontend framework for building a dynamic and interactive user interface.
+
 Node.js: Backend server environment (if applicable).
+
 CSS: Styling for the layout and responsiveness.
-GitHub Pages: Deployment of the project.
+
+Netlify: Deployment of the project.
