@@ -1,4 +1,6 @@
 LuminazFir: Solar Energy Platform
+
+
 Overview
 LuminazFir is a dynamic web application(for now) that connects users with solar panel providers, installation services, and educational resources on renewable energy. The platform allows users to browse solar panel options, pay for plans, and find certified technicians for installation. Additionally, LuminazFir provides educational content to raise awareness about solar energy and sustainability.
 
