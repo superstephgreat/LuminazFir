@@ -28,6 +28,8 @@
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll; /* Ensures vertical scrollbar */
+  overflow-x: auto;   /* Ensures horizontal scrolling if needed */
 }
 
 /* Reset some default styles */
@@ -43,6 +45,8 @@ body {
   color: #333;  
   line-height: 1.6;
   padding: 20px;
+  overflow-y: scroll; /* Ensures vertical scrollbar */
+  overflow-x: auto;   /* Ensures horizontal scrolling if needed */ 
 }
 
 /* Header font for headings */
