@@ -77,4 +77,15 @@ a, button {
   padding: 10px;
 }
 
+@media (max-width: 480px) {
 
+  body {
+    font-family: 'Poppins', sans-serif;  
+    background-color: #f4f9f4; 
+    color: #333;  
+    line-height: 1.6;
+    padding: 0;
+    
+  }
+
+}

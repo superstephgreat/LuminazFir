@@ -92,15 +92,6 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
 
-  body {
-    font-family: 'Poppins', sans-serif;  
-    background-color: #f4f9f4; 
-    color: #333;  
-    line-height: 1.6;
-    padding: 0;
-    
-  }
-
   .nav-links ul {
     display: block;
     list-style: none;
