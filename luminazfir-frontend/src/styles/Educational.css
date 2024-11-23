@@ -191,6 +191,11 @@
 }
 
 @media (max-width: 768px){
+
+.content-section h2{
+    margin: 30px;
+}
+    
     
 .tools {
     display: grid;
