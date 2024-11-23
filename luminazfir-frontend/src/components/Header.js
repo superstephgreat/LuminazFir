@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./Header.css"; 
 
 const Header = () => {
@@ -39,16 +40,16 @@ const Header = () => {
         </button>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link> {/* Replaced <a href="/" with <Link to="/" */}
           </li>
           <li>
-            <a href="/products">Products</a>
+            <Link to="/products">Products</Link> {/* Replaced <a href="/products" with <Link to="/products" */}
           </li>
           <li>
-            <a href="/technicians">Technician Finder</a>
+            <Link to="/technicians">Technician Finder</Link> {/* Replaced <a href="/technicians" with <Link to="/technicians" */}
           </li>
           <li>
-            <a href="/educational">Education & Tools</a>
+            <Link to="/educational">Education & Tools</Link> {/* Replaced <a href="/educational" with <Link to="/educational" */}
           </li>
         </ul>
       </nav>
@@ -74,13 +75,12 @@ const Header = () => {
 
         {/* Cart and Profile Icons */}
         <div className="icons">
-          <a href="/checkout" aria-label="Cart">
+          <Link to="/checkout" aria-label="Cart"> {/* Replaced <a href="/checkout" with <Link to="/checkout" */}
             <i className="fa fa-shopping-cart"></i>
-            
-          </a>
-          <a href="/dashboard" aria-label="Profile">
+          </Link>
+          <Link to="/dashboard" aria-label="Profile"> {/* Replaced <a href="/dashboard" with <Link to="/dashboard" */}
             <i className="fa fa-user"></i>
-          </a>
+          </Link>
         </div>
       </div>
     </header>
