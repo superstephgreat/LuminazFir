@@ -92,6 +92,15 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
 
+  body {
+    font-family: 'Poppins', sans-serif;  
+    background-color: #f4f9f4; 
+    color: #333;  
+    line-height: 1.6;
+    padding: 0;
+    
+  }
+
   .nav-links ul {
     display: block;
     list-style: none;
@@ -184,6 +193,15 @@
 
 @media (max-width: 480px) {
 
+  body {
+    font-family: 'Poppins', sans-serif;  
+    background-color: #f4f9f4; 
+    color: #333;  
+    line-height: 1.6;
+    padding: 0;
+    
+  }
+
   .nav-links ul {
     display: block;
     list-style: none;
@@ -195,6 +213,7 @@
     display: block;
   }
   .search-button{
+    margin-left: 2px;
     font-size: 1.1rem;
     border-radius: 40%;
     background: none;
@@ -207,7 +226,7 @@
 
   .icons a {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 4px;
   }
   
